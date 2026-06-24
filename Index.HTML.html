@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang= "es">
+<head>
+<tittle>Formulario de contacto</title>
+<form id= "formulario">
+    <label>Nombre:</label>
+    <input type="text" id="nombre">
+<label>Email:</label>
+    <input type="text" id="email">
+<label>Asunto:</label>
+<input type="text" id="asunto">
+<label>Mensaje:</label>
+<textarea type="text" id="mensaje"></textarea>
+    <button type="submit">Enviar<button>
+</form>
+<scrip
+emailjs.init("pbh2jauroFz5qU3L0");
+document.getElementById("contactform")
+document.addEventListener("submit",funtion(e)){
+    e.preventDefault();
+    const parametros ={
+nombre: document.getElementById("nombre").value;
+correo: document.getElementById("correo").value;
+mensaje: document.getElementById("mensaje").value;
+ };
+ emailjs.send(
+    "service_ifablax"
+    "template_5pqo65q"
+    parametros
+ )
+ console.log
+ .then(function(){
+    alert("correo enviado correctamente");
+    documente.getElementById("contactform");
+    document.reset();
+ } )
+
+
+
+
