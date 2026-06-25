@@ -17,6 +17,11 @@ input, textarea {
   padding: 5px;
   margin-top: 5px;
 }
+.nombre {
+    background-color: blue;
+    padding: 10px;
+    margin-top: 10px;
+}
 <html lang= "es">
 <head>
 <tittle>Formulario de contacto</title>
@@ -37,7 +42,6 @@ document.getElementById("contactform")
 document.addEventListener("submit",funtion(e)){
     e.preventDefault();
     const parametros ={
-nombre: document.getElementById("nombre").value;
 correo: document.getElementById("correo").value;
  };
  emailjs.send(
