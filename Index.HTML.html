@@ -11,7 +11,7 @@ input, textarea {
   margin-bottom: 15px;
 }
 
-document.getElementById("mensaje")
+.mensaje
   background-color: blue!
    important;
   padding: 5px;
@@ -39,7 +39,6 @@ document.addEventListener("submit",funtion(e)){
     const parametros ={
 nombre: document.getElementById("nombre").value;
 correo: document.getElementById("correo").value;
-mensaje: document.getElementById("mensaje").value;
  };
  emailjs.send(
     "service_ifablax"
