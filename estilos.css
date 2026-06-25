@@ -25,10 +25,13 @@ input, textarea {
   background-color: blue;
   padding: 10px;
   margin-top: 10px;
+    !important
 }
 
 .nombre {
     background-color: blue;
     padding: 10px;
     margin-top: 10px;
+    !important
+
 }
