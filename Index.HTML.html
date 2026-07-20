@@ -2,7 +2,7 @@
  <link rel="stylesheet" href="estilos.css"> 
 <html lang= "es">
 <head>
-<tittle>Formulario de contacto</title>
+<title>Formulario de contacto</title>
 <form id="formulario">
     <label>Nombre:</label>
     <input type="text" 
@@ -21,23 +21,23 @@
  class="mensaje" 
  name="mensaje">
  </textarea>
-    <button type="submit">Enviar<button>
+    <button type="submit">Enviar</button>
 </form>
-<scrip>
+ <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script>
 emailjs.init("pbh2jauroFz5qU3L0");
-document.getElementById("contactform")
-document.addEventListener("submit",funtion(e)){
+document.getElementById("formulario") document.addEventListener("submit",function(e)){
     e.preventDefault();
     const parametros ={
-correo: document.getElementById("correo").value;
+correo: document.getElementById("email").value
  };
  emailjs.send(
-    "service_bwar1zo"
-    "template_ep0dl1b"
+  .then(function(){
+    "service_bwar1zo",
+    "template_ep0dl1b",
     parametros
- ) </scrip>
+ ) </script>
  console.log
- .then(function(){
     alert("correo enviado correctamente");
     document.getElementById("contactform");
     document.reset();
