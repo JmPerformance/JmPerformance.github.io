@@ -26,21 +26,24 @@
  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 <script>
 emailjs.init("pbh2jauroFz5qU3L0");
-document.getElementById("formulario") document.addEventListener("submit",function(e)){
+document.getElementById("formulario") document.addEventListener("submit",function(e) {
     e.preventDefault();
     const parametros ={
-correo: document.getElementById("email").value
+correo: document.getElementById("Email").value
  };
- emailjs.send(
-  .then(function(){
+emailjs.send(
     "service_bwar1zo",
     "template_ep0dl1b",
     parametros
+)
+.then(function() {
+    alert("Correo enviado correctamente");
+});
  ) </script>
  console.log
     alert("correo enviado correctamente");
     document.getElementById("contactform");
-    document.reset();
+    document.getElementById("formulario").reset();
  } )
 
 
