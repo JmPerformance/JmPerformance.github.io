@@ -29,17 +29,17 @@ emailjs.init("pbh2jauroFz5qU3L0");
 document.getElementById("formulario") .addEventListener("submit",function(e) {
     e.preventDefault();
     const parametros ={
-nombre: document.getElementById("nombre"),value
-correo: document.getElementById("email").value
-asunto: document.getElementById("asunto"),value
-mensaje: document.getElementById("mensaje"),value
+nombre: document.getElementById("nombre").value,
+correo: document.getElementById("email").value,
+asunto: document.getElementById("asunto").value,
+mensaje: document.getElementById("mensaje").value,
  };
 emailjs.send(
     "service_bwar1zo",
     "template_ep0dl1b",
     parametros
 )
-.then(function () );
+.then(function () )
  {
     alert("Correo enviado correctamente");
     document.getElementById("formulario").reset();
@@ -48,7 +48,7 @@ emailjs.send(
         console.log(error);
         alert("Error al enviar el correo");
     });
- ) </script>
+ </script>
 
 
 
