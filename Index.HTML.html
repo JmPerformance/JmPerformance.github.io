@@ -29,7 +29,10 @@ emailjs.init("pbh2jauroFz5qU3L0");
 document.getElementById("formulario") .addEventListener("submit",function(e) {
     e.preventDefault();
     const parametros ={
+nombre: document.getElementById("nombre"),value
 correo: document.getElementById("email").value
+asunto: document.getElementById("asunto"),value
+mensaje: document.getElementById("mensaje"),value
  };
 emailjs.send(
     "service_bwar1zo",
