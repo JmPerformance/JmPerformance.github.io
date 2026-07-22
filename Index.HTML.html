@@ -46,8 +46,8 @@
                     document.getElementById("formulario").reset();
                 })
                 .catch(function(error) {
-                    console.error("Error EmailJS:", error);
-                    alert("Error al enviar el correo. Revisa la consola para más detalles.");
+                    console.error(error);
+                    alert(JSON.stringity(error));
                 });
         });
     </script>
