@@ -41,6 +41,8 @@
                 asunto: document.getElementById("asunto").value,
                 mensaje: document.getElementById("mensaje").value
             };
+            console.log(parametros);
+                alert("Antes de enviar");
 
             emailjs.send("service_bwar1zo", "template_ep0dl1b", parametros)
                 .then(function() {
