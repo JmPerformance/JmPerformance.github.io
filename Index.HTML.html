@@ -32,6 +32,7 @@
 
         document.getElementById("formulario").addEventListener("submit", function(e) {
             e.preventDefault();
+            console.log("el formulario se envio");
 
             const parametros = {
                 nombre: document.getElementById("nombre").value,
